@@ -3,20 +3,47 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Minha Lista de Tarefas</title>
+    <title>DevWorld | Aprenda Programação</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-
-    <div class="container">
-        <h2>Minhas Tarefas</h2>
-        <div class="input-group">
-            <input type="text" id="taskInput" placeholder="O que precisa ser feito?">
-            <button onclick="addTask()">Adicionar</button>
-        </div>
-        <ul id="taskList">
+    <header>
+        <nav>
+            <div class="logo">Code<span>Lab</span></div>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#sobre">Sobre</a></li>
+                <li><a href="#stack">Stack</a></li>
             </ul>
-    </div>
+            <button id="btn-contato">Olá Mundo!</button>
+        </nav>
+    </header>
+
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1>Transformando café em <span>código</span>.</h1>
+            <p>Explore o universo da programação e construa o futuro hoje mesmo.</p>
+            <a href="#stack" class="btn-primary">Ver Tecnologias</a>
+        </div>
+    </section>
+
+    <section id="stack" class="cards-container">
+        <h2>Minha Stack</h2>
+        <div class="grid">
+            <div class="card" onclick="animarCard(this)">
+                <h3>Frontend</h3>
+                <p>HTML, CSS, JavaScript e React.</p>
+            </div>
+            <div class="card" onclick="animarCard(this)">
+                <h3>Backend</h3>
+                <p>Node.js, Python e Bancos de Dados.</p>
+            </div>
+            <div class="card" onclick="animarCard(this)">
+                <h3>DevOps</h3>
+                <p>Git, Docker e Deploy na Nuvem.</p>
+            </div>
+        </div>
+    </section>
 
     <script src="script.js"></script>
 </body>
